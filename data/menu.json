@@ -1,0 +1,178 @@
+[
+  
+  {
+    "label": "Cloud Server",
+    "type": "vps",
+    "items": [
+      {
+        "label": "AMD Gen3 Cloud",
+        "gid": 40,
+        "link": "https://interdata.vn/amd-epyc-gen3-cloud/"
+      },
+      {
+        "label": "Intel Platinum Gen2 Cloud",
+        "gid": 41,
+        "link": "https://interdata.vn/intel-platinum-gen2-cloud/"
+      }
+    ]
+  },
+  {
+    "label": "Thuê VPS",
+    "type": "vps",
+    "items": [
+      {
+        "label":"VPS AMD EPYC NVMe U.2",
+        "link":"https://interdata.vn/vps-amd/"
+      },
+      {
+        "label": "Intel Platinum 8100 + 8200",
+        "gid": 29,
+        "link": "https://interdata.vn/platinum/"
+      },
+     
+      {
+        "label": "VPS GOLD NVMe U.2 ",
+        "gid": 20,
+        "link": "https://interdata.vn/vps-gold-enterprise-1gbps"
+      },
+     
+      {
+        "label": "VPS Linux  NVMe U.2",
+        "gid": 3,
+        "link": "https://interdata.vn/vps-linux"
+      },
+      {
+        "label": "VPS Windows  NVMe U.2",
+        "gid": 9,
+        "link": "https://interdata.vn/vps-windows-enterprise"
+      }
+    ]
+  },
+  {
+    "label": "Thuê Máy Chủ",
+    "type": "other",
+    "items": [
+      {
+        "label": "Thuê máy chủ tại Việt Nam",
+        "link": "https://interdata.vn/vietnam-dedicated-server"
+      }
+    ]
+  },
+  {
+    "label": "Chỗ Đặt Máy Chủ",
+    "type": "other",
+    "items": [
+      {
+        "label": "Đặt máy chủ tại Việt Nam",
+        "link": "https://interdata.vn/vietnam-co-location"
+      },
+      {
+        "label": "Đặt máy chủ tại USA",
+        "link": "https://interdata.vn/usa-co-location"
+      }
+    ]
+  },
+  {
+    "label": "Hosting",
+    "type": "hosting",
+    "items": [
+      {
+        "label": "HOSTING AMD EPYC NVMe U.2",
+        "gid": 70,
+
+        "link": "https://interdata.vn/hosting-amd/"
+      },
+      {
+        "label": "SEO Hosting 20 IP",
+        "gid": 2,
+        "link": "https://interdata.vn/hosting/seo-hosting"
+      },
+      {
+        "label": "Singapore Hosting",
+        "gid": 1,
+        "link": "https://interdata.vn/hosting/singapore-hosting"
+      },
+       {
+        "label": "Hosting Giá Rẻ NVMe U.2",
+        "gid": 24,
+        "link": "https://interdata.vn/hosting/nvme-cloud-hosting-1gbps"
+      }
+    ]
+  },
+  {
+    "label": "Free Hosting",
+    "type": "other",
+    "link": "https://interdata.vn/free-hosting"
+  },
+  {
+    "label": "Partners",
+    "type": "partner",
+    "items": [
+      {
+        "logo": "/brands/vtv.jpg",
+        "label": "VTV",
+        "link": "https://vtv.vn/cong-nghe/greencloud-hop-tac-cung-interdata-trien-khai-ha-tang-server-tai-viet-nam-20230411104845847.htm"
+      },
+      {
+        "logo": "/brands/vnexpress.svg",
+        "label": "VNExpress",
+        "link": "https://vnexpress.net/interdata-dua-giai-phap-viet-ra-thi-truong-quoc-te-4539197.html"
+      },
+      {
+        "logo": "/brands/dantri.svg",
+        "label": "Dân Trí",
+        "link": "https://dantri.com.vn/suc-manh-so/interdata-ra-mat-goi-cloud-server-network-port-10gbps-tai-viet-nam-20221123162831826.htm"
+      },
+      {
+        "logo": "/brands/cafef.svg",
+        "label": "CafeF",
+        "link": "https://cafef.vn/interdata-tang-mien-phi-luu-tru-web-nvme-dung-luong-6gb-toc-do-mang-1gbps-20230223134836995.chn"
+      },
+      {
+        "logo": "/brands/thanhnien.svg",
+        "label": "Thanh niên",
+        "link": "https://thanhnien.vn/interdata-va-vnpt-hop-tac-chien-luoc-va-khai-thac-ha-tang-datacenter-185240701161300605.htm"
+      },
+      {
+        "logo": "/brands/vtcnews.png",
+        "label": "vtcnew",
+        "link": "https://vtcnews.vn/interdata-hop-tac-cung-eztech-phat-trien-ha-tang-server-cloud-gpu-ar872150.html"
+      },
+      {
+        "logo": "/brands/24hcomvn.svg",
+        "label": "24h",
+        "link": "https://www.24h.com.vn/doanh-nghiep/interdata-va-eztech-ky-ket-thoa-thuan-hop-tac-chien-luoc-cung-cap-giai-phap-ha-tang-datacenter-c849a1569291.html"
+      },
+      {
+        "logo": "/brands/logo-bao-vietnamnet.png",
+        "label": "vietnamnet",
+        "link": "https://vietnamnet.vn/interdata-hop-tac-vnpt-khai-thac-ha-tang-datacenter-va-cac-dich-vu-the-manh-2301215.html"
+      },
+      {
+        "logo": "/brands/logo-bao-to-quoc.png",
+        "label": "bao-to-quoc",
+        "link": "https://ttvn.toquoc.vn/interdata-tang-mien-phi-luu-tru-web-nvme-dung-luong-6gb-toc-do-mang-1gbps-2023022311353656.htm"
+      },
+      {
+        "logo": "/brands/logo-bao-lamdong.png",
+        "label": "lamdong",
+        "link": "https://baolamdong.vn/thong-tin-can-biet/202405/le-ky-ket-mou-giua-interdata-va-truong-dai-hoc-yersin-da-lat-b180e1a/"
+      },
+      {
+        "logo": "/brands/logo-bao-thegioikinhdoanh.png",
+        "label": "thegioikinhdoanh",
+        "link": "https://thegioikinhdoanh.vn/hi-tech/interdata-tang-mien-phi-luu-tru-web-nvme-dung-luong-6gb-toc-do-mang-1gbps.html"
+      },
+      {
+        "logo": "/brands/logo-bao-nongthongvietnam.jpg",
+        "label": "nongthongvietnam",
+        "link": "https://nongthonviet.com.vn/interdata-va-eztech-ky-ket-thoa-thuan-hop-tac-chien-luoc-cung-cap-giai-phap-ha-tang-datacenter-1569291.ngn"
+      },
+      {
+        "logo": "/brands/logo-bao-vietnam.png",
+        "label": "vietnam",
+        "link": "https://www.vietnam.vn/interdata-hop-tac-vnpt-khai-thac-ha-tang-datacenter-va-cac-dich-vu-the-manh/"
+      }
+    ]
+  }
+]

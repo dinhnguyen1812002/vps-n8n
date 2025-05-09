@@ -1,0 +1,220 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import MenuData from "../data/menu.json";
+import useGlobalStore from "../stores";
+import Skeleton from "./PricingSkeleton";
+import Button from "./HostingTypeButton";
+
+const plans = [
+  {
+    id: 1,
+    name: "Plan 1",
+    details: "07 ngày dùng thử miễn phí",
+    price: "8K",
+    billing: "/tháng",
+    limit: "",
+    btnClass: "trial-button",
+    features: [
+      "Unlimited Email",
+      "5gb Hosting",
+      "2 website 3 sub domain",
+      "Email & Live chat",
+      "Backling",
+      "Discount Program",
+    ],
+    bgColor: "#FFF7EB",
+    animDelay: "0",
+  },
+  {
+    id: 2,
+    name: "Plan 2",
+    details: "07 ngày dùng thử miễn phí",
+    price: "12K",
+    billing: "/tháng",
+    limit: "",
+    btnClass: "btn-fourteen fw-500 tran3s w-100 !x-text-white",
+    features: [
+      "Unlimited Email",
+      "5gb Hosting",
+      "2 website 3 sub domain",
+      "Email & Live chat",
+      "Backling",
+      "Discount Program",
+    ],
+    bgColor: "#E2F2FD",
+    animDelay: "100",
+  },
+  {
+    id: 3,
+    name: "Plan 3",
+    details: "07 ngày dùng thử miễn phí",
+    price: "37K",
+    billing: "/tháng",
+    limit: "",
+    btnClass: "trial-button",
+    features: [
+      "Unlimited Email",
+      "5gb Hosting",
+      "2 website 3 sub domain",
+      "Email & Live chat",
+      "Backling",
+      "Discount Program",
+    ],
+    bgColor: "#FFEBEB",
+    animDelay: "200",
+  },
+  {
+    id: 4,
+    name: "Plan 4",
+    details: "07 ngày dùng thử miễn phí",
+    price: "79K",
+    billing: "/tháng",
+    limit: "",
+    btnClass: "trial-button",
+    features: [
+      "Unlimited Email",
+      "5gb Hosting",
+      "2 website 3 sub domain",
+      "Email & Live chat",
+      "Backling",
+      "Discount Program",
+    ],
+    bgColor: "#E4F4F1",
+    animDelay: "300",
+  },
+];
+
+const bgColors = ["#FFF7EB", "#E2F2FD", "#FFEBEB", "#E4F4F1"];
+
+const numberFormat = (number) => {
+  return new Intl.NumberFormat("vi-VN").format(parseFloat(number));
+};
+
+const strippedTags = (html) =>
+  html.replace(/(<([^>]+)>)/gi, "").replace(/\?/gi, "\n");
+
+const findTheSecondPlanInProducts = (products) => {
+  const plans = products.filter(
+    (product) =>
+      !product.name.toLowerCase().includes("custom") &&
+      !product.name.toLowerCase().includes("premium hosting"),
+  );
+
+  return plans[1];
+};
+
+const Pricing = () => {
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
+  const { loading, selectedVpsId, prices, getPrices } = useGlobalStore();
+  useEffect(() => {
+    async function fetchData() {
+      await getPrices(selectedVpsId);
+    }
+
+    fetchData().then();
+  }, [getPrices, selectedVpsId]);
+
+  return (
+    <>
+      <div
+        className="x-grid x-grid-cols-2 md:x-grid-cols-4 x-gap-3 md:x-gap-6 x-items-center x-justify-center x-mb-10"
+        id="pricing"
+      >
+        {MenuData.map((menu) => {
+          if (menu.type === "hosting") {
+            return menu.items.map((item) => {
+              return (
+                <Button
+                  key={item.label}
+                  name={item.label}
+                  gid={item.gid}
+                  href={item.link}
+                />
+              );
+            });
+          }
+        })}
+        {(loading || !prices) && <Skeleton />}
+      </div>
+
+      {prices &&
+        prices.products.map((product, index) => {
+          if (
+            product.name.toLowerCase().includes("custom") ||
+            product.name.toLowerCase().includes("premium hosting")
+          )
+            return;
+
+          const isActive =
+            findTheSecondPlanInProducts(prices.products).pid === product.pid;
+
+          return (
+            <div
+              className="col-xl-3 col-sm-6"
+              key={product.slug}
+              data-aos="fade-up"
+              data-aos-delay={300}
+            >
+              <div
+                className={`pr-table-wrapper mt-40 x-rounded-xl ${
+                  isActive ? "active" : ""
+                }`}
+              >
+                <div className="pack-name fw-500 tx-dark">{product.name}</div>
+                <div className="pack-details text-uppercase fs-14">
+                  07 ngày dùng thử miễn phí
+                </div>
+                <div
+                  className="top-banner align-items-center d-md-flex !x-pl-[5px]"
+                  style={{
+                    background:
+                      bgColors[Math.floor(Math.random() * bgColors.length)],
+                  }}
+                >
+                  <div className="price fw-500">
+                    {numberFormat(
+                      parseInt(product.pricing.VND.monthly) > 0
+                        ? product.pricing.VND.monthly
+                        : product.pricing.VND.quarterly,
+                    )}
+                  </div>
+                  <div>
+                    /
+                    {`${
+                      parseInt(product.pricing.VND.monthly) > 0 ? "" : "3 "
+                    }tháng`}
+                  </div>
+                </div>
+                <ul className="pr-feature style-none">
+                  {strippedTags(product.description)
+                    .split("\n")
+                    .map((item, subIndex) => (
+                      <li key={subIndex}>{item}</li>
+                    ))}
+                </ul>
+                <a
+                  href={product.product_url}
+                  title={product.name}
+                  target="_blank"
+                  className={
+                    isActive
+                      ? "btn-fourteen fw-500 tran3s w-100 !x-text-white"
+                      : "trial-button"
+                  }
+                >
+                  Đăng ký ngay
+                </a>
+                <div className="trial-text pt-25 tx-dark">
+                  Hoàn tiền miễn phí nếu không hài lòng.
+                </div>
+              </div>
+            </div>
+          );
+        })}
+    </>
+  );
+};
+
+export default Pricing;
