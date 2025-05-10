@@ -1,17 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import { assetPrefix } from "@/next.config.js";
+import Image from "next/image";
 
 const cards = [
   {
     id: 1,
-    icon: "/images/icon/backup.svg",
+    icon: "/images/icon/new-icon/Root-access.png",
     title: "Toàn quyền quản trị",
     description: `Quý khách sẽ có toàn quyền truy cập root, cho phép cài đặt n8n và tùy chỉnh cấu hình hệ thống theo nhu cầu, đồng thời tích hợp các ứng dụng một cách linh hoạt.`,
     delayAnim: "100",
   },
   {
     id: 2,
-    icon: "/images/icon/pendrive.svg",
+    icon: "/images/icon/new-icon/Chi-phi.png",
     title: "Tối ưu chi phí",
     description:
       "Với việc sử dụng VPS, chi phí duy trì n8n sẽ hợp lý hơn khi quy trình tự động hóa phức tạp, bởi Quý khách chỉ trả một mức phí cố định cho tài nguyên VPS đã chọn.",
@@ -19,7 +20,7 @@ const cards = [
   },
   {
     id: 3,
-    icon: "/images/icon/update-svgrepo-com.svg",
+    icon: "/images/icon/new-icon/Bao-mat.png",
     title: "Bảo mật cao",
     description:
       "Khi tự host n8n trên VPS, toàn bộ dữ liệu và thông tin xác thực được lưu trữ trực tiếp, giúp Quý khách kiểm soát bảo mật dữ liệu một cách tối đa và hiệu quả.",
@@ -27,7 +28,7 @@ const cards = [
   },
   {
     id: 4,
-    icon: "/images/icon/manage.svg",
+    icon: "/images/icon/new-icon/Upgrade.png",
     title: "Nâng cấp linh hoạt",
     description:
       "VPS cung cấp khả năng nâng cấp dễ dàng tài nguyên như CPU, RAM và dung lượng lưu trữ khi nhu cầu tăng cao, giúp duy trì hiệu suất ổn định cho n8n trong suốt quá trình sử dụng.",
@@ -47,10 +48,12 @@ const IncludedPlan = () => {
         >
           <div className="card card-style-eleven text-center text-lg-start w-100  lg-mt-50 xs-mt-40" style={{ border: "1px solid #ccc", borderRadius: "8px", padding: "15px", textAlign: "center" }}>
             <div className="icon d-flex align-items-center justify-content-center position-relative" style={{ marginBottom: "15px" }}>
-              <img
+              <Image
                 src={assetPrefix + card.icon}
                 alt="illustration"
                 className="lazy-img"
+                width={500}
+                height={500}
                 style={{ display: "block", margin: "0 auto" }}
               />
             </div>

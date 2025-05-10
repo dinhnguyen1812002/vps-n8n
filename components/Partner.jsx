@@ -108,10 +108,10 @@ export default function Partners() {
         <div className="container">
         <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto"  style={{visibility: 'visible'}}>
             <div className="tt tt-custom-bg mb-2">INTERDATA</div>
-            <h2 className="tt-md tt-gradient text-uppercase mb-0">
+            <h2 className="tt-md tt-gradient text-uppercase mb-3">
             BÁO CHÍ NÓI GÌ VỀ CHÚNG TÔI?
             </h2>
-            <p className="x-text-xl text-uppercase mb-0d x-font-bold ">
+            <p className="x-text-xl  mb-0d x-font-bold ">
               InterData liên tục nỗ lực mang đến các giải pháp VPS chất lượng <br/> và nhận được sự ghi nhận từ cộng đồng.
             </p>
           </div>

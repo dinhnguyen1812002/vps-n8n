@@ -3,7 +3,7 @@ import getPrice from "../lib/getPrice";
 
 export default create((set, get) => ({
   // selectedVpsId: 24,
-  selectedVpsId: 70,
+  selectedVpsId: 67,
   setSelectedVpsId: (selectedVpsId) => set({ selectedVpsId }),
   loading: true,
   setLoading: (loading) => set({ loading }),

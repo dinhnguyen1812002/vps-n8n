@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { assetPrefix } from "@/next.config.js";
+import Image from "next/image";
 
 
 //   {
@@ -54,14 +55,14 @@ import { assetPrefix } from "@/next.config.js";
 const cards = [
   {
     id: 1,
-    icon: "/images/icon/hdd-svgrepo-com.svg",
+    icon: "/images/icon/new-icon/Set-up.png",
     title: "Set-up n8n nhanh chóng",
     description: `Với bản OS tích hợp n8n, Quý khách chỉ cần chọn template khi đăng ký dịch vụ, VPS sẽ tự động cài đặt n8n và sẵn sàng cho hoạt động, tiết kiệm thời gian cấu hình.`,
     delayAnim: "100",
   },
   {
     id: 2,
-    icon: "/images/icon/time-svgrepo-com.svg",
+    icon: "/images/icon/new-icon/Ha-tang.png",
     title: "Hạ tầng VPS mạnh mẽ",
     description:
       "VPS n8n sử dụng CPU AMD Epyc hoặc Intel Xeon, kết hợp SSD NVMe U.2, mang lại tốc độ đọc/ghi vượt trội, hỗ trợ xử lý dữ liệu nhanh chóng và ổn định cho n8n.",
@@ -69,7 +70,7 @@ const cards = [
   },
   {
     id: 3,
-    icon: "/images/icon/safe-and-stable-svgrepo-com.svg",
+    icon: "/images/icon/new-icon/Support.png",
     title: "Support 24/7",
     description:
       "Đội ngũ kỹ thuật InterData hỗ trợ Quý khách giải quyết vấn đề về hạ tầng VPS, đảm bảo trải nghiệm sử dụng n8n trên VPS diễn ra suôn sẻ và hiệu quả.",
@@ -77,7 +78,7 @@ const cards = [
   },
   {
     id: 4,
-    icon: "/images/icon/support-online-center-svgrepo-com.svg",
+    icon: "/images/icon/new-icon/Dich-vu-vps.png",
     title: "Đa dạng các gói VPS",
     description:
       "InterData cung cấp đa dạng gói VPS tích hợp n8n với cấu hình linh hoạt, phù hợp với nhiều nhu cầu sử dụng và ngân sách khác nhau, giúp khách hàng lựa chọn giải pháp tối ưu.",
@@ -97,10 +98,12 @@ const IncludedPlan = () => {
         >
           <div className="card card-style-eleven text-center text-lg-start w-100  lg-mt-50 xs-mt-40" style={{ border: "1px solid #ccc", borderRadius: "8px", padding: "15px", textAlign: "center" }}>
             <div className="icon d-flex align-items-center justify-content-center position-relative" style={{ marginBottom: "15px" }}>
-              <img
+              <Image
                 src={assetPrefix + card.icon}
                 alt="illustration"
                 className="lazy-img"
+                width={500}
+                height={500}
                 style={{ display: "block", margin: "0 auto" }}
               />
             </div>

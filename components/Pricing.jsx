@@ -38,12 +38,12 @@ const Pricing = () => {
 
   return (
     <>
-      {/* <div
-        className="x-flex x-flex-wrap x-justify-center x-gap-3 md:x-gap-6 x-mb-10 x-grid-cols-3"
+      <div
+        className="x-flex x-flex-wrap x-justify-center x-gap-3 md:x-gap-6 x-mb-10"
         id="pricing"
       >
         {MenuData.map((menu) =>
-          menu.type === "hosting"
+          menu.type === "vps"
             ? menu.items.map((item) => (
                 <Button
                   key={item.label}
@@ -55,7 +55,7 @@ const Pricing = () => {
               ))
             : null
         )}
-      </div> */}
+      </div>
 
       {loading || !prices ? (
         <Skeleton />
@@ -73,40 +73,41 @@ const Pricing = () => {
 
           return (
             <div
-              className="col-xl-4 col-sm-6 "
+              className="col-xl-3 col-sm-6"
               key={product.slug}
               data-aos="fade-up"
               data-aos-delay={300}
             >
               <div
-                className={`pr-table-wrapper mt-10 x-rounded-xl ${isActive ? "active" : ""
-                  }`}
+                className={`pr-table-wrapper mt-40 x-rounded-xl ${
+                  isActive ? "active" : ""
+                }`}
               >
-                <h4 className="x-text-3xl pack-name fw-500 tx-dark">{product.name}</h4>
-                {/* <div className="pack-details text-uppercase fs-14">
+                <h4 className="pack-name fw-500 tx-dark">{product.name}</h4>
+                <div className="pack-details text-uppercase fs-14">
                   07 ngày dùng thử miễn phí
-                </div> */}
-                <div className="top-banner align-items-center flex flex-col !x-pl-[5px]">
-                  <div className="x-text-xl fw-500 mb-2 x-font-semibold">
-                    3.000.000/tháng
+                </div>
+                <div
+                  className="top-banner align-items-center d-md-flex !x-pl-[5px]"
+                  style={{
+                    background:
+                      bgColors[Math.floor(Math.random() * bgColors.length)],
+                  }}
+                >
+                  <div className="price fw-500">
+                    {numberFormat(
+                      parseInt(product.pricing.VND.monthly) > 0
+                        ? product.pricing.VND.monthly
+                        : product.pricing.VND.quarterly
+                    )}
                   </div>
                   <div>
-                    <a
-                      href={product.product_url}
-                      title={product.name}
-                      target="_blank"
-                      className={
-                        isActive
-                          ? "btn-fourteen fw-500 tran3s w-100 !x-text-white x-text-center"
-                          : "trial-button  x-text-center "
-                      }
-                      rel="nofollow"
-                    >
-                      Đăng ký ngay
-                    </a>
+                    /
+                    {`${
+                      parseInt(product.pricing.VND.monthly) > 0 ? "" : "3"
+                    }tháng`}
                   </div>
                 </div>
-
                 <ul className="pr-feature style-none">
                   {strippedTags(product.description)
                     .split("\n")
@@ -114,7 +115,19 @@ const Pricing = () => {
                       <li key={subIndex}>{item}</li>
                     ))}
                 </ul>
-
+                <a
+                  href={product.product_url}
+                  title={product.name}
+                  target="_blank"
+                  className={
+                    isActive
+                      ? "btn-fourteen fw-500 tran3s w-100 !x-text-white"
+                      : "trial-button"
+                  }
+                  rel="nofollow"
+                >
+                  Đăng ký ngay
+                </a>
                 <div className="trial-text pt-25 tx-dark">
                   Hoàn tiền miễn phí nếu không hài lòng.
                 </div>

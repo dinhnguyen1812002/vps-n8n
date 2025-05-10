@@ -1,8 +1,7 @@
 [
-  
   {
     "label": "Cloud Server",
-    "type": "vps",
+    "type": "cloud",
     "items": [
       {
         "label": "AMD Gen3 Cloud",
@@ -22,6 +21,7 @@
     "items": [
       {
         "label":"VPS AMD EPYC NVMe U.2",
+        "gid": 67,
         "link":"https://interdata.vn/vps-amd/"
       },
       {
@@ -79,7 +79,6 @@
       {
         "label": "HOSTING AMD EPYC NVMe U.2",
         "gid": 70,
-
         "link": "https://interdata.vn/hosting-amd/"
       },
       {

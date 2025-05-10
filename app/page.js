@@ -82,11 +82,11 @@ export default function Component() {
                 >
                   <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
                     <div className="tt tt-custom-bg mb-2">LINH HOẠT</div>
-                    <h2 className="tt-md tt-gradient text-uppercase mb-0">
+                    <h2 className="tt-md tt-gradient text-uppercase mb-3">
                       BẢNG GIÁ THUÊ VPS TÍCH HỢP N8N <br />
                       GIÁ RẺ - CHẤT LƯỢNG CAO
                     </h2>
-                    <p className="x-text-xl text-uppercase mb-0d x-font-bold">
+                    <p className="x-text-xl  x-font-bold">
                       InterData cung cấp nhiều gói dịch vụ VPS tích hợp sẵn n8n,
                       được thiết kế để đáp ứng đa dạng nhu cầu sử dụng với mức giá rẻ và chất lượng cao.
                       Dưới đây là thông tin chi tiết về các gói VPS phổ biến:
@@ -98,16 +98,16 @@ export default function Component() {
             </div>
           </div>
 
-          <div className="wrapper pricing-table-area-four m-auto">
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="wrapper pricing-table-area-four m-auto pt-40 lg-pt-30">
+            <div className="row x-flex x-justify-center">
               <Pricing />
             </div>
           </div>
-          <OpenChat />
+          {/* <OpenChat /> */}
         </div>
 
-        <div className="fancy-feature-twentyThree mt-180 lg-mt-100">
-          <div className="fancy-feature-twentyThree mt-180 lg-mt-100 ">
+        <div className="fancy-feature-twentyThree mt-50 lg-mt-100">
+          <div className="fancy-feature-twentyThree mt-100 lg-mt-100 ">
             <div className="container">
               <div
                 className="title-style-seven text-center pb-20"
@@ -115,16 +115,16 @@ export default function Component() {
               >
                 <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
                   <div className="tt tt-custom-bg mb-2">LỢI ÍCH</div>
-                  <h2 className="tt-md tt-gradient text-uppercase mb-0">
+                  <h2 className="tt-md tt-gradient text-uppercase mb-3">
                     TẠI SAO CHỌN VPS ĐỂ SELF-HOST N8N?
                   </h2>
-                  <p className="x-text-xl text-uppercase mb-0d x-font-bold">
+                  <p className="x-text-xl mb-1 x-font-bold">
                     Self-host n8n trên VPS mang lại nhiều lợi thế cho người dùng cần sự linh hoạt
                     và kiểm soát cao trong việc tự động hóa quy trình.
                     Đây là lựa chọn tối ưu để khai thác toàn bộ tiềm năng của n8n.
                   </p>
                 </div>
-              </div> <br /><br />
+              </div>
               {/* /.title-style-seven */}
               <div className="row gx-xl-5">
                 {/* <Benefits /> */}
@@ -139,16 +139,17 @@ export default function Component() {
               className="title-style-seven text-center pb-20"
               data-aos="fade-up"
             >
-              <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
+              <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto mt-100" style={{ visibility: 'visible' }}>
                 <div className="tt tt-custom-bg mb-2">ƯU ĐIỂM</div>
-                <h2 className="tt-md tt-gradient text-uppercase mb-0">
+                <h2 className="tt-md tt-gradient text-uppercase mb-3">
                   DỊCH VỤ VPS N8N INTERDATA <br />
                   TĂNG TỐC TỰ ĐỘNG HÓA
                 </h2>
-                <p className="x-text-xl text-uppercase mb-0d x-font-bold">
+                <p className="x-text-xl mb-0d x-font-bold">
                   InterData cung cấp giải pháp VPS có tích hợp bản OS được cài
-                  n8n để Quý khách có thể triển khai và vận hành n8n một cách hiệu quả,
-                  nhanh chóng, tận dụng tối đa sức mạnh của công cụ tự động hóa này.
+                  n8n để Quý khách có thể triển khai 
+                  và  vận hành n8n một cách hiệu quả, nhanh chóng,
+                  tận dụng tối đa sức mạnh của công cụ tự động hóa này
                 </p>
               </div>
             </div>
@@ -175,7 +176,7 @@ export default function Component() {
         <Blog />
 
 
-        <div className="fancy-feature-twentyFive mt-170 lg-mt-100">
+        <div className="fancy-feature-twentyFive mt-100 lg-mt-100">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-9 m-auto" data-aos="fade-up">
@@ -185,11 +186,12 @@ export default function Component() {
                 >
                   <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
                     <div className="tt tt-custom-bg mb-2">FAQs</div>
-                    <h2 className="tt-md tt-gradient text-uppercase mb-0">
+                    <h2 className="tt-md tt-gradient text-uppercase mb-3">
                       MỘT SỐ CÂU HỎI THƯỜNG GẶP
                     </h2>
-                    <p className="x-text-xl text-uppercase mb-0d x-font-bold">
-                    Sau đây là giải đáp cho một số thắc mắc phổ biến về dịch vụ VPS tích hợp n8n tại InterData:
+                    <p className="x-text-xl  mb-0d x-font-bold">
+                    Sau đây là giải đáp cho một số thắc mắc phổ biến về <br />
+                     dịch vụ VPS tích hợp n8n tại InterData:
 
                 </p>
                   </div>
@@ -198,7 +200,7 @@ export default function Component() {
               </div>
               <div data-aos="fade-up">
                 <Faq />
-                <FaqOpenChat />
+                {/* <FaqOpenChat /> */}
               </div>
             </div>
           </div>

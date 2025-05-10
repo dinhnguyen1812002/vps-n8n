@@ -2,6 +2,13 @@
 import Link from "next/link";
 import { assetPrefix } from "@/next.config.js";
 
+import { CheckBadgeIcon } from "@heroicons/react/24/solid";
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 const Hero = () => {
   return (
     <div className="hero-banner-seven">
@@ -27,20 +34,45 @@ const Hero = () => {
                 <a href="https://interdata.vn/vps-n8n/">VPS n8n</a>  tại InterData là dịch vụ thuê máy chủ ảo (VPS) được tích hợp OS template cài sẵn n8n, 
               lý tưởng cho cá nhân và doanh nghiệp muốn tự động hóa quy trình công việc, tiết kiệm thời gian và tối ưu hóa hiệu suất.
               </p>
-              <p>» Thiết lập n8n chỉ với 1-click đơn giản </p>
-              <p>» Công cụ n8n phiên bản mới nhất</p>
-              <p>» Miễn phí subdomain</p>
-              <p>» CPU AMD Epyc/Intel Xeon, SSD NVMe U.2</p>
-              <p>» Hiệu suất cao - Ổn định - Uptime 99,9%</p>
-              <p>» Hỗ trợ kỹ thuật nhanh chóng 24/7</p>
-              <p>» Kích hoạt tự động, sử dụng ngay lập tức</p>
-
-              {/* <Link
-                href="#pricing"
+              <ul className="x-list-none x-space-y-2  x-list-inside x-mt-3 x-mb-3">
+                <li className="x-flex">
+                <span className="icon">
+                    <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  </span>
+                  <span >Thiết lập n8n chỉ với 1-click đơn giản</span>
+                </li>
+                <li className="x-flex" >
+                  <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  Công cụ n8n phiên bản mới nhất
+                </li>
+                <li className="x-flex ">
+                  <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  Miễn phí subdomain
+                </li>
+                <li className="x-flex">
+                  <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  CPU AMD Epyc/Intel Xeon, SSD NVMe U.2
+                </li>
+                <li className="x-flex">
+                  <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  Hiệu suất cao - Ổn định - Uptime 99,9%
+                </li>
+                <li className="x-flex">
+                  <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  Hỗ trợ kỹ thuật nhanh chóng 24/7
+                </li>
+                <li className="x-flex">
+                <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  Kích hoạt tự động, sử dụng ngay lập tức
+                </li>
+              </ul>
+              <a
+                href="Bảng giá VPS n8n"
+               
                 className="btn-fourteen fw-500 tran3s !x-text-white mt-10"
               >
-                Dùng thử chỉ với 30k/tháng
-              </Link> */}
+                Bảng giá
+              </a>
             </div>
           </div>
 

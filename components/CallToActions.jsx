@@ -12,7 +12,7 @@ const scrollToSection = (sectionId) => {
 const CallToActions = () => {
   return (
     <div
-      className="fancy-short-banner-ten position-relative mt-225 lg-mt-100"
+      className="fancy-short-banner-ten position-relative x-mt-100 lg-mt-100"
       data-aos="fade-up"
     >
       <div className="container">
@@ -22,16 +22,17 @@ const CallToActions = () => {
 
               {/* End .col-6 */}
               <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
-                <div className="tt tt-custom-bg mb-2 x-text-white">LINH HOẠT</div>
-                <h2 className="tt-md x-text-white text-uppercase mb-0">
-                  BẢNG GIÁ THUÊ VPS TÍCH HỢP N8N <br />
-                  GIÁ RẺ - CHẤT LƯỢNG CAO
+                {/* <div className="tt tt-custom-bg mb-2 x-text-white">LINH HOẠT</div> */}
+                <h2 className=" x-text-white text-uppercase mb-0">
+                Cần tư vấn thêm về giải pháp VPS n8n? <br/>
+                Liên hệ chuyên gia của InterData!
+
                 </h2>
-                <p className="x-text-lg x-font-bold x-text-white">
+                {/* <p className="x-text-lg x-font-bold text-white mt-4">
                   InterData cung cấp nhiều gói dịch vụ VPS tích hợp sẵn n8n,
                   được thiết kế để đáp ứng đa dạng nhu cầu sử dụng với mức giá rẻ và chất lượng cao.
                   Dưới đây là thông tin chi tiết về các gói VPS phổ biến:
-                </p>
+                </p> */}
               </div>
 
               <div className="x-flex x-justify-center x-items-center x-space-x-10">
@@ -43,6 +44,7 @@ const CallToActions = () => {
                  Bảng giá
                 </a>
                 <a
+                href="https://www.messenger.com/t/447939705297286" rel="nofollow"
                 onClick={(e) => livechat(e)}
                 className="btn-line fw-500 tran3s position-relative me-sm-5 text-white"
               >

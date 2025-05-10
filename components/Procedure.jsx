@@ -42,9 +42,9 @@ export default function Procedure() {
             <div className="x-grid x-grid-cols-3 x-md:grid-cols-3 x-gap-8 x-mt-12">
                 {/* Content boxes with icons, titles and descriptions */}
                 {items.map((item, idx) => (
-                    <div key={idx} className="x-flex x-flex-col x-items-center x-text-center">
+                    <div key={idx} className="x-flex x-flex-col x-items-center x-text-left">
                         <div className="x-mb-4">
-                            <Image src={assetPrefix + item.icon} width={50} height={50} alt={item.title} />
+                            <Image src={assetPrefix + item.icon} width={70} height={70} alt={item.title}  className="lazy-img "/>
                         </div>
                         <h3 className="x-font-bold x-text-xl x-mb-2">{item.title}</h3>
                         <p className="x-text-gray-500 x-mb-6">{item.desc}</p>
