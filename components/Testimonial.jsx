@@ -57,7 +57,7 @@ export default function Testimonial() {
           <h2 className="tt-md tt-gradient mb-0 zoomOutIn">
           KHÁCH HÀNG NÓI GÌ VỀ INTERDATA
           </h2>
-          <p className="x-text-xl mb-0d x-font-bold">
+          <p className="x-text-xl mb-0d ">
           Sự hài lòng và thành công của Quý khách là minh chứng rõ ràng nhất cho chất lượng dịch vụ VPS n8n tại InterData.
 
           </p>
