@@ -65,7 +65,6 @@ const Hero = () => {
                 </p>
               <a
                 href="Bảng giá VPS n8n"
-               
                 className="btn-fourteen fw-500 tran3s !x-text-white mt-10"
               >
                 Bảng giá
