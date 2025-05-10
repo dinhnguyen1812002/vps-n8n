@@ -86,7 +86,7 @@ export default function Component() {
                       BẢNG GIÁ THUÊ VPS TÍCH HỢP N8N <br />
                       GIÁ RẺ - CHẤT LƯỢNG CAO
                     </h2>
-                    <p className="x-text-xl  x-font-bold">
+                    <p className="x-text-xl">
                       InterData cung cấp nhiều gói dịch vụ VPS tích hợp sẵn n8n,
                       được thiết kế để đáp ứng đa dạng nhu cầu sử dụng với mức giá rẻ và chất lượng cao.
                       Dưới đây là thông tin chi tiết về các gói VPS phổ biến:
@@ -118,7 +118,7 @@ export default function Component() {
                   <h2 className="tt-md tt-gradient text-uppercase mb-3">
                     TẠI SAO CHỌN VPS ĐỂ SELF-HOST N8N?
                   </h2>
-                  <p className="x-text-xl mb-1 x-font-bold">
+                  <p className="x-text-xl mb-1">
                     Self-host n8n trên VPS mang lại nhiều lợi thế cho người dùng cần sự linh hoạt
                     và kiểm soát cao trong việc tự động hóa quy trình.
                     Đây là lựa chọn tối ưu để khai thác toàn bộ tiềm năng của n8n.
@@ -145,7 +145,7 @@ export default function Component() {
                   DỊCH VỤ VPS N8N INTERDATA <br />
                   TĂNG TỐC TỰ ĐỘNG HÓA
                 </h2>
-                <p className="x-text-xl mb-0d x-font-bold">
+                <p className="x-text-xl mb-0d ">
                   InterData cung cấp giải pháp VPS có tích hợp bản OS được cài
                   n8n để Quý khách có thể triển khai 
                   và  vận hành n8n một cách hiệu quả, nhanh chóng,
@@ -189,7 +189,7 @@ export default function Component() {
                     <h2 className="tt-md tt-gradient text-uppercase mb-3">
                       MỘT SỐ CÂU HỎI THƯỜNG GẶP
                     </h2>
-                    <p className="x-text-xl  mb-0d x-font-bold">
+                    <p className="x-text-xl  mb-0d ">
                     Sau đây là giải đáp cho một số thắc mắc phổ biến về <br />
                      dịch vụ VPS tích hợp n8n tại InterData:
 

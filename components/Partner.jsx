@@ -111,7 +111,7 @@ export default function Partners() {
             <h2 className="tt-md tt-gradient text-uppercase mb-3">
             BÁO CHÍ NÓI GÌ VỀ CHÚNG TÔI?
             </h2>
-            <p className="x-text-xl  mb-0d x-font-bold ">
+            <p className="x-text-xl  mb-0d ">
               InterData liên tục nỗ lực mang đến các giải pháp VPS chất lượng <br/> và nhận được sự ghi nhận từ cộng đồng.
             </p>
           </div>

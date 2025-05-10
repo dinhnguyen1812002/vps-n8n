@@ -24,15 +24,12 @@ const CallToActions = () => {
               <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
                 {/* <div className="tt tt-custom-bg mb-2 x-text-white">LINH HOẠT</div> */}
                 <h2 className=" x-text-white text-uppercase mb-0">
+                ĐƠN GIẢN HÀNH TRÌNH TỰ ĐỘNG HÓA VỚI VPS N8N INTERDATA!
+                </h2>
+                <p className="x-text-lg x-font-bold text-white mt-4">
                 Cần tư vấn thêm về giải pháp VPS n8n? <br/>
                 Liên hệ chuyên gia của InterData!
-
-                </h2>
-                {/* <p className="x-text-lg x-font-bold text-white mt-4">
-                  InterData cung cấp nhiều gói dịch vụ VPS tích hợp sẵn n8n,
-                  được thiết kế để đáp ứng đa dạng nhu cầu sử dụng với mức giá rẻ và chất lượng cao.
-                  Dưới đây là thông tin chi tiết về các gói VPS phổ biến:
-                </p> */}
+                </p>
               </div>
 
               <div className="x-flex x-justify-center x-items-center x-space-x-10">

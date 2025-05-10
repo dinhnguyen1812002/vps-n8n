@@ -35,35 +35,31 @@ const Hero = () => {
               lý tưởng cho cá nhân và doanh nghiệp muốn tự động hóa quy trình công việc, tiết kiệm thời gian và tối ưu hóa hiệu suất.
               </p>
               
-              <p className="x-flex">
-              <span className="icon">
-                    <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
-                  </span>
-                  <span >Thiết lập n8n chỉ với 1-click đơn giản</span>
+              <p className="x-flex x-items-center x-gap-1">
+                <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  Thiết lập n8n chỉ với 1-click đơn giản
               </p>
-
-              
-                <p className="x-flex" >
+                <p className="x-flex x-items-center x-gap-1" >
                   <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
                   Công cụ n8n phiên bản mới nhất
                 </p>
-                <p className="x-flex ">
+                <p className="x-flex x-items-center x-gap-1">
                   <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
                   Miễn phí subdomain
                 </p>
-                <p className="x-flex">
+                <p className="x-flex  x-items-center x-gap-1">
                   <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
                   CPU AMD Epyc/Intel Xeon, SSD NVMe U.2
                 </p>
-                <p className="x-flex">
+                <p className="x-flex x-items-center x-gap-1">
                   <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
                   Hiệu suất cao - Ổn định - Uptime 99,9%
                 </p>
-                <p className="x-flex">
+                <p className="x-flex x-items-center x-gap-1">
                   <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
                   Hỗ trợ kỹ thuật nhanh chóng 24/7
                 </p>
-                <p className="x-flex">
+                <p className="x-flex x-items-center x-gap-1">
                 <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
                   Kích hoạt tự động, sử dụng ngay lập tức
                 </p>

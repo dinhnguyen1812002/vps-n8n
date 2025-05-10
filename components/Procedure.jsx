@@ -6,13 +6,13 @@ export default function Procedure() {
         {
             icon: "/procedure/goi-vps.png",
             title: "Chọn gói VPS phù hợp",
-            desc: "Bảng giá thuê VPS n8n, kiểm tra các thông số về CPU, RAM, SSD và băng thông để lựa chọn gói VPS phù hợp với quy mô và yêu cầu tự động hóa của Quý khách",
+            desc: "Truy cập bảng giá thuê VPS n8n, kiểm tra các thông số về CPU, RAM, SSD và băng thông để lựa chọn gói VPS phù hợp với quy mô và yêu cầu tự động hóa của Quý khách",
             number: "01"
         },
 
         {
             icon: "/procedure/os-ubuntu.png",
-            title: `Chọn OS "Ubuntu-20.04-n8n`,
+            title: `Chọn OS "Ubuntu-20.04-n8n"`,
             desc: `Khi cấu hình VPS, chọn OS template "Ubuntu-22.04-n8n", hoàn tất đăng ký và thanh toán. Hệ thống sẽ tự động cài đặt n8n sẵn sàng cho Quý khách sử dụng.`,
             number: "02"
         },
@@ -33,7 +33,7 @@ export default function Procedure() {
                     TẠI INTERDATA CHỈ VỚI VÀI CLICK
                 </h2>
 
-                <p className="x-text-xl text-uppercase mb-0d x-font-bold x-mt-5">
+                <p className="x-text-xl  mb-0d  x-mt-5">
                     Self-host n8n trên VPS mang lại nhiều lợi thế cho người dùng cần sự linh hoạt
                     và kiểm soát cao trong việc tự động hóa quy trình.
                     Đây là lựa chọn tối ưu để khai thác toàn bộ tiềm năng của n8n.
@@ -42,7 +42,7 @@ export default function Procedure() {
             <div className="x-grid x-grid-cols-3 x-md:grid-cols-3 x-gap-8 x-mt-12">
                 {/* Content boxes with icons, titles and descriptions */}
                 {items.map((item, idx) => (
-                    <div key={idx} className="x-flex x-flex-col x-items-center x-text-left">
+                    <div key={idx} className="x-flex x-flex-col x-items-center x-text-center">
                         <div className="x-mb-4">
                             <Image src={assetPrefix + item.icon} width={70} height={70} alt={item.title}  className="lazy-img "/>
                         </div>

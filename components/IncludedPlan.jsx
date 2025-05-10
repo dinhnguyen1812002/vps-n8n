@@ -56,7 +56,7 @@ const cards = [
   {
     id: 1,
     icon: "/images/icon/new-icon/Set-up.png",
-    title: "Set-up n8n nhanh chóng",
+    title: "Set up n8n đơn giản",
     description: `Với bản OS tích hợp n8n, Quý khách chỉ cần chọn template khi đăng ký dịch vụ, VPS sẽ tự động cài đặt n8n và sẵn sàng cho hoạt động, tiết kiệm thời gian cấu hình.`,
     delayAnim: "100",
   },
@@ -107,7 +107,7 @@ const IncludedPlan = () => {
                 style={{ display: "block", margin: "0 auto" }}
               />
             </div>
-            <h3 className="mt-30 mb-20 lg-mb-10 x-whitespace-nowrap">{card.title}</h3>
+            <h3 className="mt-30 mb-20 lg-mb-10 ">{card.title}</h3>
             <p style={{ textAlign: "left" }}>{card.description}</p>
           </div>
           {/* /.card-style-eleven */}
