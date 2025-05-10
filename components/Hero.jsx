@@ -34,7 +34,13 @@ const Hero = () => {
                 <a href="https://interdata.vn/vps-n8n/">VPS n8n</a>  tại InterData là dịch vụ thuê máy chủ ảo (VPS) được tích hợp OS template cài sẵn n8n, 
               lý tưởng cho cá nhân và doanh nghiệp muốn tự động hóa quy trình công việc, tiết kiệm thời gian và tối ưu hóa hiệu suất.
               </p>
-              <ul className="x-list-none x-space-y-2  x-list-inside x-mt-3 x-mb-3">
+              <div className="flex">
+              <span className="icon">
+                    <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
+                  </span>
+                  <span >Thiết lập n8n chỉ với 1-click đơn giản</span>
+              </div>
+              <ul className="x-list-none x-space-y-2 x-list-inside x-mt-3 x-mb-3">
                 <li className="x-flex">
                 <span className="icon">
                     <CheckBadgeIcon className="x-w-6 x-h-6 x-text-blue-600" />
