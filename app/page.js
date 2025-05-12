@@ -87,7 +87,7 @@ export default function Component() {
                       GIÁ RẺ - CHẤT LƯỢNG CAO
                     </h2>
                     <p className="x-text-xl">
-                      InterData cung cấp nhiều gói dịch vụ VPS tích hợp sẵn n8n,
+                      InterData cung cấp nhiều gói dịch vụ <a href="/thue-vps" className="hover:x-text-blue-500">thuê VPS</a>  tích hợp sẵn n8n,
                       được thiết kế để đáp ứng đa dạng nhu cầu sử dụng với mức giá rẻ và chất lượng cao.
                       Dưới đây là thông tin chi tiết về các gói VPS phổ biến:
                     </p>
