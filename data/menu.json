@@ -40,6 +40,11 @@
         "label": "VPS Linux  NVMe U.2",
         "gid": 3,
         "link": "https://interdata.vn/vps-linux"
+      },
+      {
+        "label": "VPS Windows  NVMe U.2",
+        "gid": 9,
+        "link": "https://interdata.vn/vps-windows-enterprise"
       }
 
     ]

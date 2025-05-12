@@ -34,7 +34,7 @@ const MainMenu = () => {
             </div>
           </li>
           {MenuData.map((menu, index) => {
-            if (!["vps", "other", "hosting"].includes(menu.type)) {
+            if (!["vps", "other", "hosting", "cloud" ].includes(menu.type)) {
               return null;
             }
 

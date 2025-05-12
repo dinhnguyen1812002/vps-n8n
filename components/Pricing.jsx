@@ -45,13 +45,15 @@ const Pricing = () => {
         {MenuData.map((menu) =>
           menu.type === "vps"
             ? menu.items.map((item) => (
-                <Button
-                  key={item.label}
-                  name={item.label}
-                  gid={item.gid}
-                  href={item.link}
-                  className="x-flex-grow-0"
-                />
+                item.gid !== 9 && (
+                  <Button
+                    key={item.label}
+                    name={item.label}
+                    gid={item.gid}
+                    href={item.link}
+                    className="x-flex-grow-0"
+                  />
+                )
               ))
             : null
         )}
