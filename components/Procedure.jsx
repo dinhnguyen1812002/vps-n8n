@@ -1,6 +1,6 @@
 import { assetPrefix } from "@/next.config";
 import Image from "next/image";
-
+import GlowingEffect from "@/components/ui/glowing-effect"
 export default function Procedure() {
     const items = [
         {
@@ -25,7 +25,8 @@ export default function Procedure() {
     ];
 
     return (
-        <section className=" x-py-12 x-px-4 x-md:px-12 x-mt-6  mb-10 ">
+
+        <section className="container x-py-12 x-px-4 x-md:px-12 x-mt-6 mb-10 x-rounded-xl x-border x-hover:border-blue-500 ">
             <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
                 <div className="tt tt-custom-bg mb-2">HƯỚNG DẪN</div>
                 <h2 className="tt-md tt-gradient text-uppercase mb-0">

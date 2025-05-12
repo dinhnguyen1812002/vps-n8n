@@ -10,10 +10,10 @@ export default function Footer() {
   return (
     <>
       <footer className="style-1 footer">
-        <div className="max-w-7xl">
-          <div className="content pb-10">
+        <div className="container">
+          <div className="container content pb-10">
             <div className="row justify-content-center flex-lg-row flex-column">
-              <div className="col-lg-4 col-12 mb-4 ">
+              <div className=" col-lg-4 mr-0">
                 <div>
                   <div className="logo mb-3">
                     <img
@@ -26,27 +26,28 @@ export default function Footer() {
                   CÔNG TY CỔ PHẦN INTER GROUP
                   </div>
                   <ul className="mb-4 custom-list">
-                    <li className="flex">
+                    <li className="">
                       {/* <div className="icon-container">
                         <HomeIcon className="icon-small" />
                       </div> */}
-                      <span>
+                      <span className="">
                       VPĐD:{" "}
-                        <a href="https://maps.app.goo.gl/ZxSPDiAQerFgVw5RA" rel="nofollow">
-                         240 Nguyễn Đình Chính, P.11. Q. Phú Nhuận, TP. Hồ Chí Minh
+                        <a href="https://maps.app.goo.gl/ZxSPDiAQerFgVw5RA" rel="nofollow" >
+                        &nbsp;240 Nguyễn Đình Chính, P.11.<br /> Q. Phú Nhuận,
+                         TP. Hồ Chí Minh
                         </a>
                       </span>
                     </li>
-                    <li className="flex">
+                    <li className="">
                     {/* <div className="icon-container ">
                       <HomeIcon className="icon-small" />
                     </div> */}
-                      <span>
+                      <span className="">
                       VPGD:{" "}
                         <a href="https://maps.app.goo.gl/JdnrU5N9xWYKShqt5" rel="nofollow">
-                           211 Đường số 5, Lakeview City,
-                          An Phú, Thủ Đức, Hồ Chí
-                          Minh
+                        &nbsp;211 Đường số 5, Lakeview City,
+                          An Phú,< br/> Thủ Đức,
+                           TP. Hồ Chí Minh
                         </a>
                       </span>
                     </li>
@@ -95,7 +96,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-2 col-12 mb-4">
+              <div className="col-lg-2 col-10 mb-4">
                 <div className="links">
                   <div className="cont">
                     <p className="link_title">Thông tin</p>
