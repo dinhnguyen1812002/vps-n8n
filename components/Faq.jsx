@@ -74,7 +74,7 @@ const Faq = () => {
   const rightColumn = faqData.slice(midPoint);
 
   return (
-    <div className="x-grid x-grid-cols-2 md:grid-cols-2 x-gap-10">
+    <div className="x-grid x-grid-cols-1 md:x-grid-cols-2 x-gap-10">
       {/* Cột bên trái */}
       <div className="accordion accordion-style-two" id="accordionLeft">
         {leftColumn.map((faq, index) => (
