@@ -1,6 +1,6 @@
 import { assetPrefix } from "@/next.config";
 import Image from "next/image";
-import GlowingEffect from "@/components/ui/glowing-effect"
+
 export default function Procedure() {
     const items = [
         {
@@ -25,8 +25,7 @@ export default function Procedure() {
     ];
 
     return (
-
-        <section className="container x-py-12 x-px-4 x-md:px-12 x-mt-6 mb-10 x-rounded-xl x-border x-hover:border-blue-500 ">
+        <section className="container x-py-12 x-px-4 x-md:px-12 x-mt-6  mb-10  x-border  x-rounded-lg  ">
             <div className="title-box mb-4 mb-xl-45 wow fadeIn text-center w-lg-75 mx-auto" style={{ visibility: 'visible' }}>
                 <div className="tt tt-custom-bg mb-2">HƯỚNG DẪN</div>
                 <h2 className="tt-md tt-gradient text-uppercase mb-0">
@@ -40,21 +39,26 @@ export default function Procedure() {
                     Đây là lựa chọn tối ưu để khai thác toàn bộ tiềm năng của n8n.
                 </p>
             </div>
-            <div className="x-grid x-grid-cols-3 x-md:grid-cols-3 x-gap-8 x-mt-12">
+            <div className="x-gap-8 x-mt-12 row x-justify-center ">
                 {/* Content boxes with icons, titles and descriptions */}
                 {items.map((item, idx) => (
-                    <div key={idx} className="x-flex x-flex-col x-items-center x-text-center">
+                    <div key={idx} className="x-flex x-flex-col x-items-center x-text-center col-sm-6 col-lg-3" >
                         <div className="x-mb-4">
                             <Image src={assetPrefix + item.icon} width={70} height={70} alt={item.title}  className="lazy-img "/>
                         </div>
-                        <h3 className="x-font-bold x-text-xl x-mb-2">{item.title}</h3>
+                        <h3 className="x-font-bold x-text-xl x-mb-2 x-whitespace-nowrap">{item.title}</h3>
                         <p className="x-text-gray-500 x-mb-6">{item.desc}</p>
+                        <div key={idx} className=" x-justify-center x-hidden x-md:block">
+                            <div className="x-bg-white x-border x-border-dashed x-border-gray-300 x-rounded-full x-px-4 x-py-2 x-text-[#1890ff] x-font-semibold">
+                                {item.number}
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
 
             {/* Separate row for numbers with a connecting line */}
-            <div className="x-relative x-mt-4">
+            <div className="hidden x-relative x-mt-4">
                 {/* Connecting dashed line from number 1 to number 3 */}
                 <div className="x-absolute x-border-t-2 x-border-dashed x-border-gray-300 x-top-1/2 x-left-[calc(16.67%+12px)] x-right-[calc(16.67%+12px)] x-z-0"></div>
 

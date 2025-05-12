@@ -49,7 +49,7 @@ export const metadata = {
     url: "https://interdata.vn/vps-n8n/",
     title,
     description,
-    images: "https://interdata.vn/thue-hosting/ogimage.png",
+    images: "https://interdata.vn/thue-hosting/n8n-vps.jpg",
   },
   robots: {
     index: true,
